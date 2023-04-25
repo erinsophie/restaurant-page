@@ -1,1 +1,3 @@
-alert("hi");
+import loadHomePage from "./home.js";
+
+loadHomePage();

@@ -73,6 +73,7 @@ h6 {
 
 .section1 {
   display: flex;
+  background-color: var(--yellow);
 }
 
 .title {
@@ -86,7 +87,6 @@ h6 {
   gap: 10px;
   width: 45%;
   padding: 7%;
-  background-color: var(--yellow);
 }
 
 .right-side {
