@@ -1,20 +1,10 @@
+  import createHeader from './header.js';
+  import createFooter from './footer.js';
+  
   export default function loadHomePage() {
     const content = document.querySelector('#content');
-  
-    // create header
-    const header = document.createElement('header');
-    header.classList.add('header');
-    const nav = document.createElement('nav');
 
-    const button1 = document.createElement('button');
-    button1.textContent = 'Home';
-    const button2 = document.createElement('button');
-    button2.textContent = 'Menu';
-    const button3 = document.createElement('button');
-    button3.textContent = 'Contact';
-
-    nav.append(button1, button2, button3);
-    header.append(nav);
+    const header = createHeader();
 
     // create section1 and section2 divs
     const main = document.createElement('main');
@@ -73,12 +63,10 @@
     //append section1 and section2 to main
     main.append(section1, section2);
 
-    // create footer
-    const footer = document.createElement('footer');
-    footer.classList.add('footer');
-    footer.textContent = 'Built by erinsophie'
+    const footer = createFooter();
   
     content.append(header, main, footer);
+    return content 
   }
 
  
