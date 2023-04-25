@@ -1,0 +1,142 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cutive Mono", monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --black: #000000;
+  --yellow: #ffb807;
+  --dark-grey: #3d3d3d;
+}
+
+/* HEADER */
+
+.header {
+  padding: 30px;
+}
+
+.header nav {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTION 1 */
+
+.section1 {
+  display: flex;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45%;
+  padding: 7%;
+  background-color: var(--yellow);
+}
+
+.right-side {
+  flex: 1;
+}
+
+/* SECTION 2 */
+
+.section2 {
+  display: flex;
+  background-color: var(--dark-grey);
+}
+
+.pic-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.pic-container img {
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 60%;
+  display: flex;
+}
+
+.review {
+  background-color: var(--yellow);
+  padding: 30px;
+  width: 90%;
+  font-size: 1.4rem;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+
+
+
+
