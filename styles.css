@@ -136,9 +136,10 @@ h6 {
 
 /* MENU */
 
-main {
+.menu-tab {
   background-color: var(--yellow);
 }
+
 
 .menu-text {
   display: flex;
