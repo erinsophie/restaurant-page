@@ -1,13 +1,13 @@
-import createHeader from "./header.js";
-import createFooter from "./footer.js";
+import createHeader from './header.js';
+import createFooter from './footer.js';
 
 export default function loadMenu() {
-  const content = document.querySelector("#content");
+  const menuDiv = document.createElement('div');
 
   const header = createHeader();
 
   const main = document.createElement("div");
-  main.classList.add('menu-tab');
+  main.classList.add("yellow-background");
 
   const menuText = document.createElement("div");
   menuText.classList.add("menu-text");
@@ -54,8 +54,9 @@ export default function loadMenu() {
   }
 
   main.append(menuText, menuGrid);
+
   const footer = createFooter();
 
-  content.append(header, main, footer);
-  return content;
-};
+  menuDiv.append(header, main, footer);
+  return menuDiv;
+}

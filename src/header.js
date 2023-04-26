@@ -1,22 +1,23 @@
-   // create header
-    export default function createHeader() {
-    const header = document.createElement('header');
-    header.classList.add('header');
-    const nav = document.createElement('nav');
+// create header
+export default function createHeader() {
+  const header = document.createElement("header");
+  header.classList.add("header");
+  const nav = document.createElement("nav");
 
-    const navBtns = [
-      'Home',
-      'Menu',
-      'Contact',
-    ];
+  const homeBtn = document.createElement("button");
+  homeBtn.setAttribute("id", "home-btn");
+  homeBtn.classList.add("tab");
+  homeBtn.textContent = "Home";
+  const menuBtn = document.createElement("button");
+  menuBtn.setAttribute("id", "menu-btn");
+  menuBtn.classList.add("tab");
+  menuBtn.textContent = "Menu";
+  const contactBtn = document.createElement("button");
+  contactBtn.setAttribute("id", "contact-btn");
+  contactBtn.classList.add("tab");
+  contactBtn.textContent = "Contact";
 
-    for(let i = 0; i < 3; i++) {
-      const button = document.createElement('button');
-      button.textContent = navBtns[i];
-      nav.append(button)
-    }
-
-    header.append(nav);
-    return header
-   }
-  
+  nav.append(homeBtn, menuBtn, contactBtn);
+  header.append(nav);
+  return header;
+}
