@@ -1,7 +1,7 @@
   import createHeader from './header.js';
   import createFooter from './footer.js';
   
-  export default function loadHomePage() {
+  export default function loadHome() {
     const content = document.querySelector('#content');
 
     const header = createHeader();
