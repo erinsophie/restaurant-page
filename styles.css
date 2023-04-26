@@ -69,6 +69,10 @@ h6 {
   cursor: pointer;
 }
 
+.header button:active {
+  transform: translateY(2px);
+}
+
 /* SECTION 1 */
 
 .section1 {
@@ -97,7 +101,7 @@ h6 {
 
 .section2 {
   display: flex;
-  background-color: var(--dark-grey);
+  background-image: url('img/wall.jpeg');
 }
 
 .pic-container {
@@ -136,10 +140,9 @@ h6 {
 
 /* MENU */
 
-.menu-tab {
+.yellow-background {
   background-color: var(--yellow);
 }
-
 
 .menu-text {
   display: flex;
@@ -168,6 +171,66 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
+
+/* CONTACT */
+
+.contact-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.contact-text p {
+  width: 45%;
+}
+
+.contact-container {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.contact-container img {
+  width: 50%;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 10px;
+}
+
+.contact-form input {
+   height: 40px;
+   background: transparent;
+   border: 1px solid var(--black);
+}
+
+.contact-form textarea {
+  background: transparent;
+  border: 1px solid var(--black);
+}
+
+.contact-form button {
+  cursor: pointer;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--black);
+}
+
+.contact-form button:active {
+  transform: translateY(2px);
+}
+
 
 
 
