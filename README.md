@@ -2,7 +2,7 @@
 
 ## [Live Demo](https://erinsophie.github.io/restaurant-page/)
 
-![Home Page](img/menu-page.png)
+![Menu Page](dist/img/menu-page.png)
 
 # Technologies Used 
 
