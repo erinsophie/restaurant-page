@@ -11,7 +11,7 @@ export default function loadMenu() {
   const menuTitle = document.createElement("h1");
   menuTitle.textContent = "Handmade Burgers";
   const menuPara = document.createElement("p");
-  menuPara.textContent = `All of our original burgers are handmade instore daily & come topped with fresh lettuce, onions, tomato, gherkins & cheese along with a choice of our 'Homemade Classic', 'Hot Signature' or 'Smokin’ Hot BBQ Sauce.`;
+  menuPara.textContent = `All of our original burgers are handmade instore daily & come topped with fresh lettuce, onions, tomato, gherkins & cheese along with a choice of our 'Homemade Classic', 'Hot Signature' or 'Smokin’ Hot BBQ Sauce.'`;
   menuText.append(menuTitle, menuPara);
 
   const menuGrid = document.createElement("div");
