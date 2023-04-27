@@ -46,7 +46,6 @@ h6 {
 :root {
   --black: #000000;
   --yellow: #ffb807;
-  --dark-grey: #3d3d3d;
 }
 
 /* HEADER */
@@ -101,7 +100,7 @@ h6 {
 
 .section2 {
   display: flex;
-  background-image: url('img/wall.jpeg');
+  background-image: url("img/wall.jpeg");
 }
 
 .pic-container {
@@ -210,9 +209,9 @@ h6 {
 }
 
 .contact-form input {
-   height: 40px;
-   background: transparent;
-   border: 1px solid var(--black);
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--black);
 }
 
 .contact-form textarea {
@@ -230,15 +229,3 @@ h6 {
 .contact-form button:active {
   transform: translateY(2px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
