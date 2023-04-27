@@ -1,10 +1,10 @@
-import createHeader from './header.js';
+import sharedHeader from './sharedHeader.js';
 import createFooter from './footer.js';
 
 export default function loadHome() {
   const content = document.getElementById('content')
 
-  const header = createHeader();
+  const header = sharedHeader;
 
   // create section1 and section2 divs
   const main = document.createElement("main");

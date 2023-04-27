@@ -1,10 +1,10 @@
-import createHeader from './header.js';
-import createFooter from './footer.js';
+import sharedHeader from "./sharedHeader.js";
+import createFooter from "./footer.js";
 
 export default function loadContact() {
-  const contactDiv = document.createElement("div");
+  const content = document.getElementById('content');
 
-  const header = createHeader();
+  const header = sharedHeader;
 
   const main = document.createElement("div");
   main.classList.add("yellow-background");
@@ -74,8 +74,8 @@ export default function loadContact() {
 
   const footer = createFooter();
 
-  contactDiv.append(header, main, footer);
-  return contactDiv;
+  content.append(header, main, footer);
+  return content;
 }
 
 // Helper function to create a label element
