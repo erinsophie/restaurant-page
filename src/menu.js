@@ -1,10 +1,7 @@
-import sharedHeader from "./sharedHeader.js";
-import createFooter from "./footer.js";
+
 
 export default function loadMenu() {
-  const content = document.getElementById('content');
-
-  const header = sharedHeader
+  const menu = document.createElement("div");
 
   const main = document.createElement("div");
   main.classList.add("yellow-background");
@@ -55,8 +52,10 @@ export default function loadMenu() {
 
   main.append(menuText, menuGrid);
 
-  const footer = createFooter();
+  const footer = document.createElement("footer");
+  footer.classList.add("footer");
+  footer.textContent = "Built by erinsophie";
 
-  content.append(header, main, footer);
-  return content;
+  menu.append(main, footer);
+  return menu;
 }

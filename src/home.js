@@ -1,10 +1,6 @@
-import sharedHeader from './sharedHeader.js';
-import createFooter from './footer.js';
 
 export default function loadHome() {
-  const content = document.getElementById('content')
-
-  const header = sharedHeader;
+  const home = document.createElement('div')
 
   // create section1 and section2 divs
   const main = document.createElement("main");
@@ -60,9 +56,11 @@ export default function loadHome() {
   section2.append(picContainer, reviewContainer);
 
   main.append(section1, section2);
-  
-  const footer = createFooter();
 
-  content.append(header, main, footer);
-  return content;
+  const footer = document.createElement("footer");
+  footer.classList.add("footer");
+  footer.textContent = "Built by erinsophie";
+
+  home.append(main, footer);
+  return home;
 }
